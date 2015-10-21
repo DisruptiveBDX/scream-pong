@@ -1,0 +1,12 @@
+server:
+    build: ./
+    command: nodemon --watch . server.js
+    ports:
+        - 7777:7777
+    environment:
+        - VIRTUAL_HOST=pheromon.ants.builders
+        - VIRTUAL_PORT=7777
+        - NODE_ENV=development
+    volumes:
+        - .:/usr/scream-pong
+    tty: true
