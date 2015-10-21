@@ -10,16 +10,7 @@
 
   <div id="sidebar">
 
-    <h2>This is Pong!</h2>
-
-    <ul class='parts'>
-      <li><a href='/' class='selected'>Full Game</a></li>
-      <li><a href='/part1'><i>game runner</i> - Part 1</a></li>
-      <li><a href='/part2'><i>bouncing ball</i> - Part 2</a></li>
-      <li><a href='/part3'><i>game loop</i> - Part 3</a></li>
-      <li><a href='/part4'><i>collision detection</i> - Part 4</a></li>
-      <li><a href='/part5'><i>computer AI</i> - Part 5</a></li>
-    </ul>
+    <h2>This is Scream Pong!</h2>
 
     <div class='description'>
       <p>
@@ -32,7 +23,26 @@
       <p>
         <b>Esc</b> can be used to abandon a game.
       </p>
-      <p>This is adapted from <a src='https://github.com/jakesgordon/javascript-pong'>this page/<a></p>
+      <p>This is adapted from <a href='https://github.com/jakesgordon/javascript-pong'>this page</a></p>
+      <div class='settings'>
+        <label for='sound'>sound: </label>
+        <input type='checkbox' id='sound'>
+      </div>
+
+      <div class='settings'>
+        <label for='stats'>stats: </label>
+        <input type='checkbox' id='stats' checked>
+      </div>
+
+      <div class='settings'>
+        <label for='footprints'>footprints: </label>
+        <input type='checkbox' id='footprints'>
+      </div>
+
+      <div class='settings'>
+        <label for='predictions'>predictions: </label>
+        <input type='checkbox' id='predictions'>
+      </div>
     </div>
 
   </div>
