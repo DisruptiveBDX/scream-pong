@@ -226,6 +226,25 @@ Game = {
       var end    = Game.timestamp();
       this.updateStats(middle - start, end - middle);
       this.lastFrame = start;
+
+      var player = this.game.leftPaddle;
+      var y = Math.abs(player.maxY - meter.volume * 10000);
+      console.log('VOLUME', y);
+
+      if (y > 300){
+        player.stopMovingUp();
+        player.moveDown();
+      }
+      else {
+        player.stopMovingDown();
+        player.moveUp();
+      }
+      // if (y < player.minY)
+      //   y = player.minY;
+      // else if (y > player.maxY)
+      //   y = player.maxY;
+
+      // player.setpos(player.x, y);
     },
 
     update: function(dt) {

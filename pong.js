@@ -368,6 +368,7 @@ Pong = {
           y = this.maxY;
         this.setpos(this.x, y);
       }
+      
     },
 
     ai: function(dt, ball) {
